@@ -12,6 +12,7 @@ import Sponsors from './components/Sponsors';
 import InstaHandle from './components/InstaHandle';
 import Research from './components/Research';
 import Team_History from './components/Team_History';
+import Learning from './components/Learning';
 
 import { Fragment } from 'react';
 import { Particles } from './components/Particles';
@@ -26,7 +27,7 @@ const App = () => {
           <Route path='/projects' element={<Projects/>}/>
           <Route path='/team' element={<Team_History/>}/>
           <Route path='/research' element={<Research/>} />
-          <Route path='/learning' element={<Research/>}/>
+          <Route path='/learning' element={<Learning/>}/>
         </Routes>
       </BrowserRouter>
     </Fragment>
