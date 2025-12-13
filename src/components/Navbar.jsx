@@ -11,8 +11,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-2 fixed 
-      top-0 z-20 bg-flashWhite sm:opacity-[0.90] xxs:h-[12vh]`}>
+        className={`${styles.paddingX} fixed top-0 left-0 w-full h-[64px]
+        flex items-center bg-flashWhite z-[1000] overflow-visible`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"
@@ -250,50 +250,44 @@ const Navbar = () => {
         </ul>
 
         {/* mobile */}
-        <div className="sm:hidden flex flex-1 w-screen justify-end items-center">
-          {toggle ? (
-            <div
-              className={`p-6 bg-flashWhite opacity-[0.98] absolute 
-                top-0 left-0 w-screen h-[100vh] z-10 menu ${
-                  toggle ? 'menu-open' : 'menu-close'
-                }`}>
-              <div className="flex justify-end">
-                <img
-                  src={close}
-                  alt="close"
-                  className="w-[22px] h-[22px] object-contain cursor-pointer"
-                  onClick={() => setToggle(!toggle)}
-                />
-              </div>
-              <ul
-                className="list-none flex flex-col -gap-[1rem] 
-                items-start justify-end mt-[10rem] -ml-[35px]">
-                {navLinks.map((nav) => (
-                  <li
-                    id={nav.id}
-                    key={nav.id}
-                    className={`${
-                      active === nav.title ? 'text-french' : 'text-eerieBlack'
-                    } text-[88px] font-bold font-arenq 
-                      uppercase tracking-[1px] cursor-pointer`}
-                    onClick={() => {
-                      setToggle(!toggle);
-                      setActive(nav.title);
-                    }}>
-                    <a href={`#${nav.id}`}>{nav.title}</a>
-                  </li>
-                ))}
-              </ul>
+              {/* MOBILE MENU */}
+      <div className="sm:hidden">
+        <button
+          onClick={() => setToggle(true)}
+          className="z-[2000]"
+        >
+          <img
+            src={menu}
+            alt="menu"
+            className="w-[34px] h-[34px]"
+          />
+        </button>
+
+        {toggle && (
+          <div className="fixed inset-0 bg-white/95 backdrop-blur-md z-[3000] flex flex-col p-6">
+            <div className="flex justify-end">
+              <button onClick={() => setToggle(false)}>
+                <img src={close} alt="close" className="w-[24px] h-[24px]" />
+              </button>
             </div>
-          ) : (
-            <img
-              src={menu}
-              alt="menu"
-              className="w-[34px] h-[34px] object-contain cursor-pointer"
-              onClick={() => setToggle(!toggle)}
-            />
-          )}
-        </div>
+
+            <ul className="mt-16 space-y-8 text-eerieBlack">
+              <li className="text-3xl font-extrabold tracking-wide" onClick={() => setToggle(false)}>
+                <a href="#hero">Home</a>
+              </li>
+              <li className="text-3xl font-extrabold tracking-wide" onClick={() => setToggle(false)}>
+                <a href="#about">About</a>
+              </li>
+              <li className="text-3xl font-extrabold tracking-wide" onClick={() => setToggle(false)}>
+                <a href="#contact">Contact</a>
+              </li>
+              <li className="text-3xl font-extrabold tracking-wide" onClick={() => setToggle(false)}>
+                <Link to="/projects">Projects</Link>
+              </li>
+            </ul>
+          </div>
+        )}
+      </div>
       </div>
     </nav>
   );

@@ -19,26 +19,27 @@ import { Particles } from './components/Particles';
 
 const App = () => {
   return (
-    <Fragment>
-      <BrowserRouter>
-      {/* <Navbar/> */}
+    <BrowserRouter>
+      <Particles />
+      <Navbar />
+
+      <div className="pt-[64px]">
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/projects' element={<Projects/>}/>
-          <Route path='/team' element={<Team_History/>}/>
-          <Route path='/research' element={<Research/>} />
-          <Route path='/learning' element={<Learning/>}/>
+          <Route path='/' element={<Home />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/team' element={<Team_History />} />
+          <Route path='/research' element={<Research />} />
+          <Route path='/learning' element={<Learning />} />
         </Routes>
-      </BrowserRouter>
-    </Fragment>
+      </div>
+    </BrowserRouter>
   );
 };
+
 
 const Home = () => (
   <>
     <div>
-            <Particles/>
-            <Navbar />
             <Hero />
           </div>
 
