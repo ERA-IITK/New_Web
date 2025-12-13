@@ -23,16 +23,21 @@
     };
 
     const handleSubmit = async (e) => {
+      console.log("Submitting form:", form);
       e.preventDefault();
       setLoading(true);
 
       try {
         const scriptURL = "https://script.google.com/macros/s/AKfycbw78xJ_5UvrQiJb_ZNm6ayIDYuz3lHSVbIfnAo_rN0FL9PzKaDl5JzHfsAXSlsJadmr/exec"; // replace with /exec URL
 
+        const formData = new FormData();
+        Object.entries(form).forEach(([key, value]) => {
+          formData.append(key, value);
+        });
+
         const res = await fetch(scriptURL, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(form),
+          body: formData,
         });
 
         // Read the body once
