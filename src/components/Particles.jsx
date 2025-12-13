@@ -104,7 +104,12 @@ export const Particles = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-        style={{zIndex: '100'}}
+        style={{
+          position: 'fixed',
+          inset: 0,
+          zIndex: -1,
+          pointerEvents: 'none',
+        }}
       />
     );
   }
