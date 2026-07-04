@@ -1,0 +1,10 @@
+.exit-icon {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+.exit-icon svg {
+    width: 30px; /* Adjust the size according to your icon */
+    height: 30px; /* Adjust the size according to your icon */
+  }
