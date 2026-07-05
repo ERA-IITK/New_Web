@@ -7,7 +7,6 @@ import linkedinIcon from '../assets/team/linkedin.jpg';
 
 const TeamHeadCard = ({
     name,
-    phone,
     email,
     image,
     githubLink,
@@ -30,7 +29,6 @@ const TeamHeadCard = ({
                      opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         >
           <p className="text-white text-lg font-semibold">{name}</p>
-          <p className="text-white text-sm mt-1">{phone}</p>
           <p className="text-white text-sm">{email}</p>
   
           {/* Social Icons with white square backgrounds */}

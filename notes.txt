@@ -12,5 +12,5 @@ Correct asset names(please I need this personally...abhi bohot chaotic hai)
 Clean left-over code(like the stuff about Movie Metro and all)
 Standardise src.constants.js(Again personally needed)
 
-Meet the Team
+Meet the Team-  Only change Past Head Section and Team Head Section
 Research and Learning

@@ -12,6 +12,7 @@ import CustomButton3 from './Button_TeamHistory';
 import Navbar1 from './Navbar1';
 import TeamHeadsSection from './TeamHeadSection';
 import PastHeadsSection from './PastHeadsSection';
+import JTMSection from './JTMSection';
 // import ArrowBackIosSharpIcon from '@mui/icons-material/ArrowBackIosSharp';
 import { useEffect } from 'react';
 import './InstaHandle.css'
@@ -198,6 +199,7 @@ const Team_history = () => {
             </motion.p>
           </motion.div>
           <TeamHeadsSection />
+          <JTMSection />
           <PastHeadsSection />
         <div className='InstaHandle'>
           <InstaHandle/>

@@ -6,8 +6,9 @@ IGNORE = {
     "venv",
     ".git",
     ".idea",
-    ".vscode"
-    ".github"
+    ".vscode",
+    ".github",
+    "dist"
 }
 
 def tree(directory, prefix=""):
