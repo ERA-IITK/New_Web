@@ -140,7 +140,7 @@ const PastHeadsSection = () => {
   return (
     <section className="w-full flex flex-col items-center mt-10">
       {/* 2024-2025 Heading */}
-      <h2 className="text-3xl font-bold mb-6 text-white">2024-2025</h2>
+      <h2 className="text-3xl font-bold mb-6 text-white">2024-2025 Heads</h2>
       <div className="flex flex-wrap gap-8 justify-center">
         {heads2024_25.map((head) => (
           <TeamHeadCard
@@ -157,7 +157,7 @@ const PastHeadsSection = () => {
       <br />
       <br />
       {/* 2023-2024 Heading */}
-      <h2 className="text-3xl font-bold mb-6 text-white">2023-2024</h2>
+      <h2 className="text-3xl font-bold mb-6 text-white">2023-2024 Heads</h2>
       <div className="flex flex-wrap gap-8 justify-center">
         {heads2023_24.map((head) => (
           <TeamHeadCard
@@ -174,7 +174,7 @@ const PastHeadsSection = () => {
       <br />
       <br />
       {/* 2022-2023 Heading */}
-      <h2 className="text-3xl font-bold mb-6 text-white">2022-2023</h2>
+      <h2 className="text-3xl font-bold mb-6 text-white">2022-2023 Heads</h2>
       <div className="flex flex-wrap gap-8 justify-center">
         {heads2022_23.map((head) => (
           <TeamHeadCard

@@ -128,7 +128,7 @@ const jtmData = [
 const JTMSection = () => {
   return (
     <section className="w-full flex flex-col items-center mt-10">
-      <h2 className="text-3xl font-bold mb-6">JTMs</h2>
+      <h2 className="text-3xl font-bold mb-6">Junior Team Members</h2>
       <div className="flex flex-wrap gap-8 justify-center">
         {jtmData.map((jtm) => (
           <TeamHeadCard
