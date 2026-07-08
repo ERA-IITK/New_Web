@@ -19,8 +19,18 @@ const TeamHeadCard = ({
         <img
           src={image}
           alt={name}
-          className="w-full h-full object-cover rounded-lg"
+          className="w-full h-[305px] object-cover rounded-t-lg"
         />
+
+        <div className="absolute bottom-0 left-0 right-0 bg-black/75 py-3 px-2">
+          <p className="text-white font-semibold text-center">
+            {name}
+          </p>
+
+          <p className="text-gray-300 text-sm text-center">
+            {email}
+          </p>
+        </div>
   
         {/* Dark overlay & details (hidden by default, shown on hover) */}
         <div
@@ -28,8 +38,8 @@ const TeamHeadCard = ({
                      justify-center items-center text-center 
                      opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         >
-          <p className="text-white text-lg font-semibold">{name}</p>
-          <p className="text-white text-sm">{email}</p>
+          {/* <p className="text-white text-lg font-semibold">{name}</p>
+          <p className="text-white text-sm">{email}</p> */}
   
           {/* Social Icons with white square backgrounds */}
           <div className="flex space-x-4 mt-4">
