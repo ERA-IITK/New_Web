@@ -1,9 +1,9 @@
 import React from 'react';
 
 // Replace these icon imports with your actual icon paths
-import githubIcon from '../assets/team/github.jpg';
-import instagramIcon from '../assets/team/instagram.jpg';
-import linkedinIcon from '../assets/team/linkedin.jpg';
+import githubIcon from '../../assets/team/github.jpg';
+import instagramIcon from '../../assets/team/instagram.jpg';
+import linkedinIcon from '../../assets/team/linkedin.jpg';
 
 const TeamHeadCard = ({
     name,

@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { SectionWrapper } from '../hoc';
-import { Link } from 'react-router-dom';
-import { styles } from '../styles';
-import { github, pineapple, pineappleHover } from '../assets';
-import { projects } from '../constants';
-import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
-import CustomButton from './Button_Brochure';
-import CustomButton1 from './Button_Pitch_deck';
+import { SectionWrapper } from '../../hoc';
+import { styles } from '../../styles';
+import { pineapple } from '../../assets';
+import { sponsorData } from '../../constants';
+import { fadeIn, textVariant, staggerContainer } from '../../utils/motion';
+import CustomButton from '../Button_Brochure';
+import CustomButton1 from '../Button_Pitch_deck';
 
-const ProjectCard = ({
+const SponsorCard = ({
   id,
   name,
   Sponsor_logo,
@@ -115,15 +114,9 @@ const ProjectCard = ({
 };
 
 const Sponsors = () => {
-//   const initialActiveProjectId = 'project-2'; // Change this to the actual ID of the IITK project
-//   const [activeProject, setActiveProject] = useState(initialActiveProjectId);
 
-  const initialActiveSponsorId = 'project-6'; // Change this to the actual ID of the IITK sponsor
+  const initialActiveSponsorId = 'sponsor-1';
   const [activeSponsor, setActiveSponsor] = useState(initialActiveSponsorId);
-
-//   const setActiveProjectCard = (projectId) => {
-//     setActiveProject(projectId);
-//   };
 
   const setActiveSponsorCard = (sponsorId) => {
     setActiveSponsor(sponsorId);
@@ -132,7 +125,7 @@ const Sponsors = () => {
   return (
     <>
     {/* Sponsors Section */}
-    <div id='projects' className="-mt-[-2rem]" style={{ marginBottom: '-18.29vh' }} >
+    <div id='sponsors' className="-mt-[-2rem]" style={{ marginBottom: '-18.29vh' }} >
         <motion.div variants={textVariant()}>
           <p className={`${styles.sectionSubText} ${styles.textCenter} `}>Why Us</p>
           <h2 className={`${styles.sectionHeadTextLight} ${styles.textCenter}`}>Our Sponsors</h2>
@@ -147,12 +140,6 @@ const Sponsors = () => {
       </motion.p>
         </motion.div>
 
-        {/* Rest of your Projects section code */}
-        {/* Use projectData for mapping */}
-        <div className="w-full flex">
-          {/* Your project descriptions */}
-        </div>
-
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -160,11 +147,11 @@ const Sponsors = () => {
           viewport={{ once: false, amount: 0.25 }}
           className={`${styles.innerWidth} mx-auto flex flex-col`}>
           <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
-            {projects.slice(4,7).map((project, index) => (
-              <ProjectCard
-                key={project.id}
+            {sponsorData.map((sponsor, index) => (
+              <SponsorCard
+                key={sponsor.id}
                 index={index}
-                {...project}
+                {...sponsor}
                 active={activeSponsor}
                 handleClick={setActiveSponsorCard}
               />

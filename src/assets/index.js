@@ -61,6 +61,12 @@ import movie from './projects/movie-metro.png';
 import nyeusi from './projects/nyeusi.png';
 import space from './projects/space-hub.png';
 
+import decision from './learning/decision.png';
+import hardware from './learning/hardware.png';
+import localisation from './learning/localisation.png';
+import mathematics from './learning/mathematics.png';
+import mlcv from './learning/mlcv.png';
+
 export {
   bwmap,
   nairobi,
@@ -115,4 +121,9 @@ export {
   ansys_logo,
   snt_logo,
   snt_bg,
+  decision,
+  hardware,
+  localisation,
+  mathematics,
+  mlcv
 };

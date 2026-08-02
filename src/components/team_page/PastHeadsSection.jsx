@@ -3,9 +3,9 @@ import React from 'react';
 import TeamHeadCard from './TeamHeadCard'; // Same card component used by current heads
 
 // Example data for past heads (update to real data/images)
-import pasthead1Img from '../assets/team/2024_25head1.jpeg';
-import pasthead2Img from '../assets/team/2024_25head2.jpeg';
-import pasthead3Img from '../assets/team/2024_25head3.jpeg';
+import pasthead1Img from '../../assets/team/2024_25head1.jpeg';
+import pasthead2Img from '../../assets/team/2024_25head2.jpeg';
+import pasthead3Img from '../../assets/team/2024_25head3.jpeg';
 
 const heads2024_25 = [
   {
@@ -39,10 +39,10 @@ const heads2024_25 = [
 
 
 // Example data for past heads (update to real data/images)
-import pasthead4Img from '../assets/team/21head1.jpeg';
-import pasthead5Img from '../assets/team/21head2.jpeg';
-import pasthead6Img from '../assets/team/21head3.jpeg';
-import pasthead7Img from '../assets/team/21head4.jpeg';
+import pasthead4Img from '../../assets/team/21head1.jpeg';
+import pasthead5Img from '../../assets/team/21head2.jpeg';
+import pasthead6Img from '../../assets/team/21head3.jpeg';
+import pasthead7Img from '../../assets/team/21head4.jpeg';
 
 const heads2023_24 = [
   {
@@ -83,11 +83,11 @@ const heads2023_24 = [
   },
 ];
 // 2022-2023 Data (replace or update with actual 2022-23 heads)
-import pasthead8Img from '../assets/team/y20_head1.png';
-import pasthead9Img from '../assets/team/y20_head2.png';
-import pasthead10Img from '../assets/team/y20_head3.png';
-import pasthead11Img from '../assets/team/y20_head4.png';
-import pasthead12Img from '../assets/team/y20_head5.png';
+import pasthead8Img from '../../assets/team/y20_head1.png';
+import pasthead9Img from '../../assets/team/y20_head2.png';
+import pasthead10Img from '../../assets/team/y20_head3.png';
+import pasthead11Img from '../../assets/team/y20_head4.png';
+import pasthead12Img from '../../assets/team/y20_head5.png';
 
 const heads2022_23 = [
   {

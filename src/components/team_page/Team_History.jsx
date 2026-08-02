@@ -1,21 +1,21 @@
 import React, { Fragment, useState } from 'react';
 import { motion } from 'framer-motion';
-import { SectionWrapper } from '../hoc';
+import { SectionWrapper } from '../../hoc';
 import { Link } from 'react-router-dom';
-import InstaHandle from './InstaHandle';
-import { Particles } from '../components/Particles';
-import { styles } from '../styles';
-import { github, pineapple, pineappleHover } from '../assets';
-import { projects } from '../constants';
-import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
-import CustomButton3 from './Button_TeamHistory';
-import Navbar1 from './Navbar1';
+import InstaHandle from '../home_page/InstaHandle';
+import Particles from '../Particles';
+import { styles } from '../../styles';
+import { github, pineapple, pineappleHover } from '../../assets';
+import { projects } from '../../constants';
+import { fadeIn, textVariant, staggerContainer } from '../../utils/motion';
+import CustomButton3 from '../Button_TeamHistory';
+import Navbar1 from '../Navbar1';
 import TeamHeadsSection from './TeamHeadSection';
 import PastHeadsSection from './PastHeadsSection';
 import JTMSection from './JTMSection';
 // import ArrowBackIosSharpIcon from '@mui/icons-material/ArrowBackIosSharp';
 import { useEffect } from 'react';
-import './InstaHandle.css'
+import '../home_page/InstaHandle.css'
 // import ArrowIcon from './ArrowIcon';
 
 const ProjectCard = ({

@@ -1,11 +1,8 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { styles } from '../styles';
-import { navLinks } from '../constants';
-import { shaq, bwmap, worldmap, robobg } from '../assets';
-import SocialMenu from './socialMenu';
-import Typewriter from './Typewriter';
-// import { useEffect, useState } from 'react';
+import { styles } from '../../styles';
+import { shaq, robobg } from '../../assets';
+import SocialMenu from '../socialMenu';
+import Typewriter from '../Typewriter';
 
 const Hero = () => {
   return (
@@ -25,10 +22,6 @@ const Hero = () => {
           lg:top-[150px] xl:top-[250px] ${styles.paddingX} 
           max-w-7xl mx-auto flex flex-row items-start
           justify-between gap-3`}>
-          <div className="flex flex-col justify-center items-center mt-5 ml-3">
-            <div className="w-5 h-5 rounded-full bg-[#0a0a0a] sm:hidden" />
-            <div className="w-1 sm:h-80 h-40 bw-gradient sm:hidden" />
-          </div>
           <div>
             <Typewriter styles={styles} />
             <section  className="footer-follow" style={{ fontSize: 48, display: 'flex', gap: '20px', marginLeft:'25px' }}>

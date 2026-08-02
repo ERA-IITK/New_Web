@@ -2,18 +2,18 @@ import React from 'react';
 import TeamHeadCard from './TeamHeadCard';
 
 // Example images (replace with real images)
-import jtm1Img from '../assets/team/2026_27/JTMs photos/Aadya.jpeg';
-import jtm2Img from '../assets/team/2026_27/JTMs photos/Ishita.jpeg';
-import jtm3Img from '../assets/team/2026_27/JTMs photos/Lakshya.jpeg';
-import jtm4Img from '../assets/team/2026_27/JTMs photos/Lavanya Prakash.jpeg';
-import jtm5Img from '../assets/team/2026_27/JTMs photos/Om Upadhyaya.jpeg';
-import jtm6Img from '../assets/team/2026_27/JTMs photos/Praneel pathak.jpeg';
-import jtm7Img from '../assets/team/2026_27/JTMs photos/Soham Nandi.jpeg';
-import jtm8Img from '../assets/team/2026_27/JTMs photos/Srivanth Guntha.jpeg';
-import jtm9Img from '../assets/team/2026_27/JTMs photos/Sudhanv.jpeg';
-import jtm10Img from '../assets/team/2026_27/JTMs photos/Surendar.jpeg';
-import jtm11Img from '../assets/team/2026_27/JTMs photos/Suryansh.jpeg';
-import jtm12Img from '../assets/team/2026_27/JTMs photos/Yash jatil.jpeg';
+import jtm1Img from '../../assets/team/2026_27/JTMs photos/Aadya.jpeg';
+import jtm2Img from '../../assets/team/2026_27/JTMs photos/Ishita.jpeg';
+import jtm3Img from '../../assets/team/2026_27/JTMs photos/Lakshya.jpeg';
+import jtm4Img from '../../assets/team/2026_27/JTMs photos/Lavanya Prakash.jpeg';
+import jtm5Img from '../../assets/team/2026_27/JTMs photos/Om Upadhyaya.jpeg';
+import jtm6Img from '../../assets/team/2026_27/JTMs photos/Praneel pathak.jpeg';
+import jtm7Img from '../../assets/team/2026_27/JTMs photos/Soham Nandi.jpeg';
+import jtm8Img from '../../assets/team/2026_27/JTMs photos/Srivanth Guntha.jpeg';
+import jtm9Img from '../../assets/team/2026_27/JTMs photos/Sudhanv.jpeg';
+import jtm10Img from '../../assets/team/2026_27/JTMs photos/Surendar.jpeg';
+import jtm11Img from '../../assets/team/2026_27/JTMs photos/Suryansh.jpeg';
+import jtm12Img from '../../assets/team/2026_27/JTMs photos/Yash jatil.jpeg';
 
 const jtmData = [
   {

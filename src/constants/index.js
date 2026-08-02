@@ -34,9 +34,14 @@ import {
   snt_bg,
   snt_logo,
   github,
+  decision,
+  hardware,
+  localisation,
+  mathematics,
+  mlcv
 } from '../assets';
 
-export const navLinks = [
+const navLinks = [
   {
     id: 'about',
     title: 'About',
@@ -67,6 +72,49 @@ const services = [
   {
     title: 'Tracking',
     icon: prototyping,
+  },
+];
+
+const research = [
+  {
+    id: 'research-1',
+    title: 'IEEE RO-MAN 2019',
+    icon: frontend,
+    year: '2019',
+    type: 'Conference Paper',
+    description:
+      "Published at the 28th IEEE International Conference on Robot & Human Interactive Communication. This work highlights ERA's early research contributions in robotics and human-robot interaction.",
+    link: 'https://paper-link-here',
+  },
+  {
+    id: 'research-2',
+    title: 'ICRA Technical Poster',
+    icon: backend,
+    year: '2022',
+    type: 'Top 5 Poster',
+    description:
+      "ERA's technical proposal was selected among the Top 5 technical posters accepted at the IEEE International Conference on Robotics and Automation (ICRA 2022).",
+    link: 'https://www.youtube.com/watch?v=U3kv0PN-7x0',
+  },
+  {
+    id: 'research-3',
+    title: 'IEEE/SICE SII',
+    icon: ux,
+    year: '2024',
+    type: 'Conference Paper',
+    description:
+      "Research paper published in the 16th IEEE/SICE International Symposium on System Integration (SII 2024), showcasing our work in autonomous robotics.",
+    link: 'https://paper-link-here',
+  },
+  {
+    id: 'research-4',
+    title: 'RoboCup Symposium',
+    icon: prototyping,
+    year: '2026',
+    type: 'Submitted',
+    description:
+      "Research paper submitted to the RoboCup Symposium 2026, presenting our latest work developed through the RoboCup project.",
+    link: 'https://drive.google.com/file/d/1-Qtn6ZhFEgJ89u4zeriIqfu2VxVylVtQ/view?usp=sharing',
   },
 ];
 
@@ -129,6 +177,39 @@ const technologies = [
   },
 ];
 
+const learning = [
+  {
+    name: 'Hardware & Electronics',
+    icon: hardware,
+    link: 'https://docs.google.com/document/d/18IWWnURLR_sW0XcY8_GPWlnXACgq0mKCAgx6hmIvkBQ/edit?usp=sharing',
+    description: 'Build a strong foundation in embedded systems by learning STM32 programming, sensors, communication protocols, actuators, PCBs, and electronics that power ERA robots.',
+  },
+  {
+    name: 'Localization & Motion Planning',
+    icon: localisation,
+    link: 'https://docs.google.com/document/d/1EH8QUN1ddCoz0diaKg9H5Z6Bax_UXN5kfkR5HD4YG3Y/edit?usp=sharing',
+    description: 'Learn how autonomous robots estimate their position, build maps, and plan safe paths using concepts like localization, SLAM, path planning, and navigation algorithms.',
+  },
+  {
+    name: 'ML & Computer Vision',
+    icon: mlcv,
+    link: 'https://docs.google.com/document/d/1E2JWMJuzsFVnEZLeMDWta_-wL1eV4_nDc-8LNKyT_tE/edit?usp=sharing',
+    description: 'Explore machine learning fundamentals before diving into computer vision techniques such as image processing, object detection, tracking, and perception for robotics.',
+  },
+  {
+    name: 'Decision Algorithms',
+    icon: decision,
+    link: 'https://docs.google.com/document/d/1vNwIKt7IBDYOjbJTHaHT-OwFkkETGlpc-YvV3FQ5whs/edit?usp=sharing',
+    description: 'Understand how robots make intelligent decisions using finite state machines, behavior trees, game strategies, and high-level planning for dynamic environments.',
+  },
+  {
+    name: 'Mathematics (Optional)',
+    icon: mathematics,
+    link: 'https://docs.google.com/document/d/1YV0j_b2G_cEQSRHOahz6DnNlkSyAEACSsvjxmUXs4Sw/edit?usp=sharing',
+    description: 'Strengthen the mathematical foundations behind robotics with linear algebra, calculus, probability, optimization, and geometry. Helpful but not required to begin learning.',
+  },
+];
+
 const experiences = [
   {
     title: 'Front-End Developer',
@@ -163,242 +244,60 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: 'EXCAVATOR',
-    Sponsor_logo: github,
-    description: 'Developing an autonomous excavator for remote operation and enhanced safety through integrated sensors. Funded at 11,13,500 Rs',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: math,
-    repo: 'https://surge.iitk.ac.in/AnnualReport/report2021.pdf',
-    demo: 'https://github.com/ERA-IITK',
+    name: 'PHASR',
+    image: leaderboard,
   },
   {
     id: 'project-2',
-    name: 'Competitions',
-    Sponsor_logo: github,
-    description:
-      'ERA excels in the renowned RoboMaster AI Challenge, emphasizing autonomous robot design and strategy. We are also dedicated to RoboCup, specializing in mechatronics, control systems, and autonomous soccer-playing robots.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'restapi',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'scss',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: leaderboard,
-    repo: 'https://github.com/ERA-IITK/Robomaster-AI-Challenge-2020',
-    demo: 'https://github.com/ERA-IITK',
+    name: 'PHASR',
+    image: math,
   },
-  // {
-  //   id: 'project-3',
-  //   name: 'ICRA 2022',
-  //   Sponsor_logo: github,
-  //   description:
-  //       'Recognition: Our Technical Proposal Ranked in the Top 5 and Technical Poster Accepted',
-  //   tags: [
-  //     {
-  //       name: 'nextjs',
-  //       color: 'blue-text-gradient',
-  //     },
-  //     {
-  //       name: 'supabase',
-  //       color: 'green-text-gradient',
-  //     },
-  //     {
-  //       name: 'css',
-  //       color: 'pink-text-gradient',
-  //     },
-  //   ],
-  //   image: nyeusi,
-  //   repo: 'https://github.com/ERA-IITK/ICRA_ai_challenge',
-  //   demo: 'https://github.com/ERA-IITK',
-  // },
   {
     id: 'project-3',
-    name: 'BIRAC WC',
-    Sponsor_logo: github,
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://github.com/ERA-IITK',
+    name: 'PHASR',
+    image: leaderboard,
   },
   {
     id: 'project-4',
-    name: 'DEXTER',
-    Sponsor_logo: github,
-    description: 'A comic characters list app that displays Marvel characters.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'mongodb',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: komikult,
-    repo: 'https://github.com/ERA-IITK/Dexter',
-    demo: 'https://github.com/ERA-IITK',
+    name: 'PHASR',
+    image: math,
   },
   {
     id: 'project-5',
+    name: 'PHASR',
+    image: leaderboard,
+  },
+];
+
+const sponsorData = [
+  {
+    id: 'sponsor-1',
     name: 'IITK',
     Sponsor_logo: snt_logo,
-    description: 
+    description:
       " Indian Institute of Technology, Kanpur",
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'restapi',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'scss',
-        color: 'pink-text-gradient',
-      },
-    ],
     image: snt_bg,
-    link: 'https://sntiitk.com/',
     link: 'https://sntiitk.com/',
   },
   {
-    id: 'project-6',
-    Sponsor_logo: github,
+    id: 'sponsor-2',
     name: 'Noccarc',
     Sponsor_logo: noccarc_logo,
     description: 'Innovating At Every Step To Drive Advanced Technologies',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
     image: noccarc_bg,
-    link: 'https://www.noccarc.com/',
-    link: 'https://www.noccarc.com/',
+    link: 'https://sntiitk.com/',
   },
   {
-    id: 'project-7',
+    id: 'sponsor-3',
     name: 'Ansys',
     Sponsor_logo: ansys_logo,
     description: 'Powering Innovation That Drives Human Advancement',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
     image: ansys_bg,
     link: 'https://www.ansys.com/en-in',
-    link: 'https://www.ansys.com/en-in',
   },
-  // {
-  //   id: 'project-4',
-  //   name: 'Movie Metro',
-  //   Sponsor_logo: noccarc_logo,
-  //   description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
-  //   tags: [
-  //     {
-  //       name: 'nextjs',
-  //       color: 'blue-text-gradient',
-  //     },
-  //     {
-  //       name: 'supabase',
-  //       color: 'green-text-gradient',
-  //     },
-  //     {
-  //       name: 'css',
-  //       color: 'pink-text-gradient',
-  //     },
-  //   ],
-  //   image: movie,
-  //   link: 'https://github.com/shaqdeff/Movie-Metro',
-  //   link: 'https://movie-metro.netlify.app/',
-  // },
-  // {
-  //   id: 'project-5',
-  //   name: 'Nyeusi Fest Site',
-  //   Sponsor_logo: noccarc_logo,
-  //   description:
-  //     'This is a link concert website for a music festival called Nyeusi.',
-  //   tags: [
-  //     {
-  //       name: 'nextjs',
-  //       color: 'blue-text-gradient',
-  //     },
-  //     {
-  //       name: 'supabase',
-  //       color: 'green-text-gradient',
-  //     },
-  //     {
-  //       name: 'css',
-  //       color: 'pink-text-gradient',
-  //     },
-  //   ],
-  //   image: nyeusi,
-  //   link: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-  //   link: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
-  // },
 ];
 
-export { services, projects , technologies, experiences,  };
+export { services, projects, technologies, experiences, learning, research, navLinks, sponsorData };
 
 
 

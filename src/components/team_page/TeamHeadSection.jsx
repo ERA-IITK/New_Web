@@ -2,11 +2,11 @@ import React from 'react';
 import TeamHeadCard from './TeamHeadCard';
 
 // Example images (replace with real images)
-import teamhead1Img from '../assets/team/2026_27/Heads+STMs photos/aayush.jpeg';
-import teamhead2Img from '../assets/team/2026_27/Heads+STMs photos/Arnab Datta.jpeg';
-import teamhead3Img from '../assets/team/2026_27/Heads+STMs photos/pranesh.jpeg';
-import teamhead4Img from '../assets/team/2026_27/Heads+STMs photos/Rattandeep-Singh-Puar.jpeg';
-import teamhead5Img from '../assets/team/2026_27/Heads+STMs photos/Sushil_Krishna_K.jpeg';
+import teamhead1Img from '../../assets/team/2026_27/Heads+STMs photos/aayush.jpeg';
+import teamhead2Img from '../../assets/team/2026_27/Heads+STMs photos/Arnab Datta.jpeg';
+import teamhead3Img from '../../assets/team/2026_27/Heads+STMs photos/pranesh.jpeg';
+import teamhead4Img from '../../assets/team/2026_27/Heads+STMs photos/Rattandeep-Singh-Puar.jpeg';
+import teamhead5Img from '../../assets/team/2026_27/Heads+STMs photos/Sushil_Krishna_K.jpeg';
 
 const teamHeadsData = [
   {

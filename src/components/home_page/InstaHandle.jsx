@@ -1,22 +1,14 @@
-import { useState, useRef } from 'react';
+import React,{ useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-import { styles } from '../styles';
-import { SectionWrapper } from '../hoc';
-import { slideIn } from '../utils/motion';
-import { send, sendHover } from '../assets';
-import React,{ useEffect } from 'react';
+import { styles } from '../../styles';
+import { SectionWrapper } from '../../hoc';
+import { slideIn } from '../../utils/motion';
+import { send, sendHover } from '../../assets';
 import './InstaHandle.css'
 
 
-const Insta = () => {
-
-  useEffect(() => {
-    // Widget initialization code here (if required)
-  }, []); // Empty dependency array ensures the effect runs once
-  // <div class="elfsight-app-bcdddf16-aa00-448f-8745-fb6762e5b41d" data-elfsight-app-lazy></div>
-  <div class="elfsight-app-bcdddf16-aa00-448f-8745-fb6762e5b41d" data-elfsight-app-lazy></div>  
-  
+const Insta = () => {  
   const formRef = useRef();
   const [form, setForm] = useState({
     name: '',
@@ -35,8 +27,6 @@ const Insta = () => {
     e.preventDefault();
     setLoading(true);
 
-    // sign up on emailjs.com (select the gmail service and connect your account).
-    //click on create a new template then click on save.
     emailjs
       .send(
         'serviceID', // paste your ServiceID here (you'll get one when your service is created).
