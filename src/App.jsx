@@ -4,17 +4,18 @@ import { Fragment } from 'react';
 import {
   About,
   Contact,
-  Experience,
+  // Experience,
   Hero,
   Navbar,
-  Tech,
+  // Tech,
   Projects,
   Sponsors,
   InstaHandle,
   Research,
   Team_History,
   Learning,
-  Particles
+  Particles,
+  Timeline,
 } from './components';
 
 const App = () => {
@@ -28,8 +29,8 @@ const App = () => {
           <Route path='/team' element={<Team_History />} />
           <Route path='/research' element={<Research />} />
           <Route path='/learning' element={<Learning />} />
-          <Route path='/experience' element={<Experience />} />
-          <Route path='/tech' element={<Tech />} />
+          {/* <Route path='/experience' element={<Experience />} /> */}
+          {/* <Route path='/tech' element={<Tech />} /> */}
 
         </Routes>
       </BrowserRouter>
@@ -46,6 +47,8 @@ const Home = () => (
     <div className="bg-about bg-cover bg-center bg-no-repeat">
       <About />
     </div>
+
+    <Timeline />
     <Sponsors />
     
     <div>

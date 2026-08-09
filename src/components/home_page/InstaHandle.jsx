@@ -61,14 +61,14 @@ const Insta = () => {
 
   return (
     <>
-    <div class='widget-hider1'></div>
-    <div class='widget-hider2'></div>
+    <div className='widget-hider1'></div>
+    <div className='widget-hider2'></div>
 
     <div
         
       className="-mt-[0rem] xl:flex-col flex-col-reverse 
       flex gap-10 overflow-hidden">
-        <div class="elfsight-app-bcdddf16-aa00-448f-8745-fb6762e5b41d"></div>
+        <div className="elfsight-app-bcdddf16-aa00-448f-8745-fb6762e5b41d"></div>
       
     </div>
     </>
