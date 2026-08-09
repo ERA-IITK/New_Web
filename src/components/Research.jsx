@@ -87,7 +87,7 @@ const Research = () => {
         <Navbar1 />
       </div>
 
-      <div id="projects" style={{ position: 'relative', width: '80vw', marginTop: '5vh' }}>
+      <div className="relative w-[80vw] pt-24 mx-auto z-10">
         <motion.div variants={textVariant()} className={`${styles.textCenter} flex-col`}>
           <h2 className={`${styles.sectionHeadTextLight}`}>Research</h2>
           <motion.p
@@ -95,33 +95,6 @@ const Research = () => {
             className={`sm:text-[18px] text-[16px] text-taupe tracking-wider font-poppins ml-2 ${styles.textCenter}`}
           >
             ERA actively contributes to robotics research through conference publications, technical posters, and symposium papers. Our work spans autonomous systems, robot-human interaction, multi-agent robotics, and intelligent decision-making.
-            {/* The team was founded under Prof. Laxmidhar Behera, currently the director of IIT Mandi, in 2018. 
-            We continue to work with faculty, our current advisor being Prof. Indranil Saha. Since our inception, 
-            we have grown in number and ability, undertaking various projects, participating in competitions, and demonstrating 
-            our research.  */}
-            {/* To get to know the amazing people involved, 
-            <a
-              href="https://www.dropbox.com/scl/fi/165w2ovsfg4wlif3zone6/Brochure.pdf?rlkey=wjhej532ayequjvny56ggnpjt&dl=0"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                fontWeight: 'bold',
-                color: '#6194fb',
-                textDecoration: 'none',
-                transition: 'color 0.3s, transform 0.3s',
-                display: 'inline-block'
-              }}
-              onMouseOver={(e) => {
-                e.target.style.color = 'white';
-                e.target.style.transform = 'scale(1.1)';
-              }}
-              onMouseOut={(e) => {
-                e.target.style.color = '#6194fb';
-                e.target.style.transform = 'scale(1)';
-              }}
-            >
-               click here.
-            </a> */}
           </motion.p>
         </motion.div>
 

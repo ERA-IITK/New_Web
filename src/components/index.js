@@ -12,6 +12,6 @@ import Research from './Research';
 import Team_History from './team_page/Team_History';
 import Learning from './Learning';
 import Particles from './Particles';
-import Timeline from './home_page/Timeline';
+import Timeline from './home_page/Timeline1';
 
 export { Hero, Navbar, About, Projects, Contact, BallCanvas, Sponsors, InstaHandle, Research, Team_History, Learning, Particles, Timeline };

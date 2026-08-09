@@ -20,11 +20,14 @@ import {
   // git,
   // figma,
   // docker,
-  
+
   // Projects
-  leaderboard,
-  math,
-  
+  phasr,
+  dexter1,
+  excavator,
+  dexter2,
+  birac_wheelchair,
+
   // Learning
   hardware,
   localisation,
@@ -39,9 +42,14 @@ import {
   // dcc,
 
   // Sponsors
+  iitk_logo,
   noccarc_logo,
   ansys_logo,
-  iitk_logo,
+  ieee_logo,
+  aws_logo,
+  nvidia_logo,
+  dji_logo,
+  hyundai_logo,
 
 } from '../assets';
 
@@ -166,27 +174,27 @@ const projects = [
   {
     id: 'project-1',
     name: 'PHASR',
-    image: leaderboard,
+    image: phasr,
   },
   {
     id: 'project-2',
-    name: 'PHASR',
-    image: math,
+    name: 'Dexter 1.0',
+    image: dexter1,
   },
   {
     id: 'project-3',
-    name: 'PHASR',
-    image: leaderboard,
+    name: 'Excavator',
+    image: excavator,
   },
   {
     id: 'project-4',
-    name: 'PHASR',
-    image: math,
+    name: 'Dexter 2.0',
+    image: dexter2,
   },
   {
     id: 'project-5',
-    name: 'PHASR',
-    image: leaderboard,
+    name: 'BIRAC Wheelchair',
+    image: birac_wheelchair,
   },
 ];
 
@@ -254,82 +262,79 @@ const learning = [
 //   },
 // ];
 
-
 const sponsorData = [
   {
     id: 'sponsor-1',
     name: 'IITK',
-    description: "Indian Institute of Technology, Kanpur",
-    link: 'https://sntiitk.com/',
+    description: 'The Indian Institute of Technology Kanpur, supporting innovation, research, and technological excellence.',
+    link: 'https://www.iitk.ac.in/',
     logo: iitk_logo,
   },
+
   {
     id: 'sponsor-2',
     name: 'Noccarc',
-    description: 'Innovating At Every Step To Drive Advanced Technologies',
-    link: 'https://sntiitk.com/',
+    description: 'Building advanced robotic and automation solutions to transform industrial processes.',
+    link: 'https://noccarc.com/',
     logo: noccarc_logo,
   },
+
   {
     id: 'sponsor-3',
     name: 'Ansys',
-    description: 'Powering Innovation That Drives Human Advancement',
+    description: 'Engineering simulation software that enables teams to design, test, and build innovative products.',
     link: 'https://www.ansys.com/en-in',
     logo: ansys_logo,
   },
+
   {
     id: 'sponsor-4',
     name: 'IEEE',
-    description: 'Powering Innovation That Drives Human Advancement',
-    link: 'https://www.ansys.com/en-in',
-    logo: ansys_logo,
+    description: 'A global technical community advancing technology, engineering, and innovation through research and collaboration.',
+    link: 'https://www.ieee.org/',
+    logo: ieee_logo,
   },
+
   {
     id: 'sponsor-5',
     name: 'AWS',
-    description: 'Powering Innovation That Drives Human Advancement',
-    link: 'https://www.ansys.com/en-in',
-    logo: ansys_logo,
+    description: 'Cloud computing infrastructure and services enabling teams to build, deploy, and scale technology.',
+    link: 'https://aws.amazon.com/',
+    logo: aws_logo,
   },
+
   {
     id: 'sponsor-6',
     name: 'NVIDIA',
-    description: 'Powering Innovation That Drives Human Advancement',
-    link: 'https://www.ansys.com/en-in',
-    logo: ansys_logo,
+    description: 'Accelerating robotics and artificial intelligence through powerful computing platforms and technologies.',
+    link: 'https://www.nvidia.com/',
+    logo: nvidia_logo,
   },
+
   {
     id: 'sponsor-7',
     name: 'DJI',
-    description: 'Powering Innovation That Drives Human Advancement',
-    link: 'https://www.ansys.com/en-in',
-    logo: ansys_logo,
+    description: 'Developing advanced robotics, drones, and intelligent systems that push the boundaries of autonomous technology.',
+    link: 'https://www.dji.com/',
+    logo: dji_logo,
   },
+
   {
     id: 'sponsor-8',
     name: 'Hyundai',
-    description: 'Powering Innovation That Drives Human Advancement',
-    link: 'https://www.ansys.com/en-in',
-    logo: ansys_logo,
+    description: 'Driving the future of mobility through robotics, autonomous systems, and innovative engineering.',
+    link: 'https://www.hyundai.com/',
+    logo: hyundai_logo,
   },
 ];
 
 const achievements = [
-  {
-    year: "2018",
-    category: "Founding",
-    title: "Team Founding",
-    location: "TBD",
-    description:
-      "TBD",
-  },
-  {
-    year: "2019",
-    category: "Research Paper",
-    title: "The paper",
-    location: "TBD",
-    description:
-      "TBD",
+  { 
+    year: "2018", 
+    category: "Founding", 
+    title: "Team ERA Founded", 
+    location: "IIT Kanpur", 
+    description: "Team ERA was founded under Prof. Laxmidhar Behera with a focus on research and development in autonomous robotics.", 
   },
   {
     year: "2019",
@@ -338,6 +343,14 @@ const achievements = [
     location: "Shenzhen, China",
     description:
       "Secured Overall 3rd Position among international teams in the DJI RoboMaster Challenge.",
+  },
+  {
+    year: "2019",
+    category: "Research",
+    title: "IEEE RO-MAN 2019",
+    location: "New Delhi, India",
+    description:
+      "Published a research paper at the 28th IEEE International Conference on Robot & Human Interactive Communication (RO-MAN 2019).",
   },
   {
     year: "2020",
@@ -373,19 +386,11 @@ const achievements = [
   },
   {
     year: "2024",
-    category: "Paper",
-    title: "The paper",
-    location: "TBD",
+    category: "Research",
+    title: "IEEE/SICE SII 2024",
+    location: "Honolulu, USA",
     description:
-      "TBD",
-  },
-  {
-    year: "2025",
-    category: "Competition",
-    title: "Inter IIT Tech Meet",
-    location: "India",
-    description:
-      "Won Gold Medal for the Eternal Robotics Problem Statement at Inter IIT Tech Meet 14.0.",
+      "Published a research paper at the 16th IEEE/SICE International Symposium on System Integration (SII 2024).",
   },
   {
     year: "2025",
@@ -396,13 +401,134 @@ const achievements = [
       "Qualified for the RoboCup MSL Main Challenge as the first Indian team ever.",
   },
   {
-    year: "2026",
+    year: "2025",
     category: "Competition",
-    title: "RoboCup Symposium",
+    title: "Inter IIT Tech Meet",
+    location: "India",
+    description:
+      "Won Gold Medal for the Eternal Robotics Problem Statement at Inter IIT Tech Meet 14.0.",
+  },
+  {
+    year: "2026",
+    category: "Research",
+    title: "RoboCup Symposium 2026",
     location: "Seoul, South Korea",
     description:
-      "TBD",
+      "Submitted a research paper on our Localisation Algorithm to the RoboCup Symposium 2026.",
   },
 ];
+
+// ```js
+// const achievements = [
+//   {
+//     year: "2018",
+//     category: "Founding",
+//     title: "Team ERA Founded",
+//     location: "IIT Kanpur",
+//     description:
+//       "Team ERA was founded under Prof. Laxmidhar Behera with a focus on research and development in autonomous robotics.",
+//   },
+
+//   {
+//     year: "2019",
+//     category: "Research",
+//     title: "IEEE RO-MAN 2019",
+//     location: "New Delhi, India",
+//     description:
+//       "Published a research paper at the 28th IEEE International Conference on Robot & Human Interactive Communication (RO-MAN 2019), marking one of ERA's early research contributions.",
+//   },
+
+//   {
+//     year: "2019",
+//     category: "Competition",
+//     title: "DJI RoboMaster Challenge",
+//     location: "Shenzhen, China",
+//     description:
+//       "Secured Overall 3rd Position among international teams in the DJI RoboMaster Challenge.",
+//   },
+
+//   {
+//     year: "2020",
+//     category: "Competition",
+//     title: "DJI RoboMaster Challenge",
+//     location: "Online",
+//     description:
+//       "Recognized for Outstanding Performance in Perception and Navigation in the DJI RoboMaster Challenge.",
+//   },
+
+//   {
+//     year: "2022",
+//     category: "Research",
+//     title: "ICRA Technical Poster",
+//     location: "Philadelphia, USA",
+//     description:
+//       "ERA's technical proposal was recognized among the Top 5 technical posters and the technical poster was accepted at the IEEE International Conference on Robotics and Automation (ICRA 2022).",
+//   },
+
+//   {
+//     year: "2022",
+//     category: "Competition",
+//     title: "DJI RoboMaster AI Challenge",
+//     location: "International",
+//     description:
+//       "Secured Overall 3rd Position among 40+ international teams in the DJI RoboMaster AI Challenge 2022.",
+//   },
+
+//   {
+//     year: "2024",
+//     category: "Competition",
+//     title: "RoboCup MSL Ambition Challenge",
+//     location: "Eindhoven, Netherlands",
+//     description:
+//       "Qualified for the RoboCup Middle Size League Ambition Challenge, becoming the first and only Indian team to achieve this.",
+//   },
+
+//   {
+//     year: "2024",
+//     category: "Research",
+//     title: "IEEE/SICE SII 2024",
+//     location: "Honolulu, USA",
+//     description:
+//       "Published a research paper at the 16th IEEE/SICE International Symposium on System Integration (SII 2024), showcasing ERA's work in autonomous robotics.",
+//   },
+
+//   {
+//     year: "2025",
+//     category: "Competition",
+//     title: "Inter IIT Tech Meet 14.0",
+//     location: "India",
+//     description:
+//       "Won the Gold Medal for the Eternal Robotics Problem Statement at Inter IIT Tech Meet 14.0.",
+//   },
+
+//   {
+//     year: "2025",
+//     category: "Competition",
+//     title: "RoboCup MSL Main Challenge",
+//     location: "Salvador, Brazil",
+//     description:
+//       "Qualified for the RoboCup MSL Main Challenge, becoming the first and only Indian team to achieve this.",
+//   },
+
+//   {
+//     year: "2026",
+//     category: "Competition",
+//     title: "RoboCup MSL 2026",
+//     location: "Seoul, South Korea",
+//     description:
+//       "Qualified for RoboCup MSL 2026 in Seoul, South Korea, continuing ERA's journey on the international RoboCup stage.",
+//   },
+
+//   {
+//     year: "2026",
+//     category: "Research",
+//     title: "RoboCup Symposium 2026",
+//     location: "Seoul, South Korea",
+//     description:
+//       "Submitted a research paper to the RoboCup Symposium 2026, presenting recent work developed through the RoboCup project.",
+//   },
+// ];
+// ```
+
 
 export { projects, learning, research, navLinks, sponsorData, achievements };

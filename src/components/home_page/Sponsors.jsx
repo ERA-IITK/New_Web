@@ -13,59 +13,25 @@ const SponsorCard = ({ sponsor }) => {
       href={sponsor.link}
       target="_blank"
       rel="noopener noreferrer"
-      className="group block h-[200px]"
-      style={{ perspective: "1000px" }}
+      className="group relative block h-[200px] w-full overflow-hidden rounded-3xl"
     >
-      <div
-        className="relative h-full w-full duration-700"
-        style={{
-          transformStyle: "preserve-3d",
-          transition: "transform 0.7s",
-        }}
-      >
-        {/* Rotate on hover */}
-        <div
-          className="group-hover:[transform:rotateY(180deg)] absolute inset-0"
-          style={{
-            transformStyle: "preserve-3d",
-            transition: "transform 0.7s",
-          }}
-        >
-          {/* FRONT */}
-          <div
-            className="absolute inset-0 rounded-3xl overflow-hidden border border-[#6194fb]/20 bg-jetLight shadow-card flex items-center justify-center"
-            style={{
-              backfaceVisibility: "hidden",
-            }}
-          >
-            <img
-              src={sponsor.logo}
-              alt={sponsor.name}
-              className="max-h-24 max-w-[70%] object-contain"
-            />
-          </div>
+      <div className="absolute inset-0 flex items-center justify-center rounded-3xl border border-[#6194fb]/20 bg-jetLight shadow-card transition-all duration-500 group-hover:border-[#6194fb]/60 group-hover:shadow-[0_0_30px_rgba(97,148,251,0.2)]">
+        <img
+          src={sponsor.logo}
+          alt={sponsor.name}
+          className="max-h-[65%] max-w-[65%] object-contain transition-all duration-500 group-hover:scale-90 group-hover:opacity-20"
+        />
 
-          {/* BACK */}
-<div
-  className="absolute inset-0 rounded-3xl border border-[#6194fb]/20 bg-jetLight shadow-card p-6 flex flex-col justify-center items-center text-center"
-  style={{
-    transform: "rotateY(180deg)",
-    backfaceVisibility: "hidden",
-  }}
->
-            <h3 className="text-2xl font-bold text-timberWolf">
-              {sponsor.name}
-            </h3>
-
-            <p className="mt-3 text-silver text-sm leading-6">
-              {sponsor.description}
-            </p>
-          </div>
+        <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-500 group-hover:opacity-100">
+          <h3 className="px-6 text-center font-beckman text-[28px] font-bold uppercase tracking-[2px] text-timberWolf">
+            {sponsor.name}
+          </h3>
         </div>
       </div>
     </a>
   );
 };
+
 
 const Sponsors = () => {
   return (
@@ -77,15 +43,12 @@ const Sponsors = () => {
         viewport={{ once: true }}
         className="text-center"
       >
-        <p className={styles.sectionSubTextLight}>
-          Partners
-        </p>
 
         <h2 className={styles.sectionHeadTextLight}>
           Our Sponsors
         </h2>
 
-        <motion.p
+        <p
           variants={fadeIn("", "", 0.15, 1)}
           className="mt-6 max-w-4xl mx-auto text-taupe text-[18px] leading-8"
         >
@@ -93,7 +56,7 @@ const Sponsors = () => {
           competitions, and student-led innovation. Their contributions enable
           us to design, build, and deploy autonomous robotic systems while
           representing IIT Kanpur on international platforms.
-        </motion.p>
+        </p>
 
         <div className="flex justify-center gap-5 mt-8">
           <CustomButton />
@@ -130,4 +93,5 @@ const Sponsors = () => {
   );
 };
 
-export default SectionWrapper(Sponsors, "sponsors");
+// export default SectionWrapper(Sponsors, "sponsors");
+export default Sponsors;

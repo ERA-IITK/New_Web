@@ -32,7 +32,7 @@ const ProjectCard = ({
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/40 rounded-[24px]" />
+      <div className="absolute inset-0  rounded-[24px]" />
 
       {/* Project Name */}
       <motion.div

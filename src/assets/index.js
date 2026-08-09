@@ -43,8 +43,11 @@ import prototyping from './icons/prototyping.png';
 // import rubyrails from './tech/rubyrails.png';
 
 // Projects
-import leaderboard from './projects/leaderboard.png';
-import math from './projects/math-magicians.png';
+import phasr from './projects/phasr.png';
+import dexter1 from './projects/dexter_1.png';
+import excavator from './projects/excavator.png';
+import dexter2 from './projects/dexter_2.png';
+import birac_wheelchair from './projects/birac_wheelchair.png';
 
 // Learning
 import decision from './learning/decision.png';
@@ -60,9 +63,14 @@ import mlcv from './learning/mlcv.png';
 // import microverse from './company/microverse.png';
 
 // Sponsors
+import iitk_logo from './sponsors/iitk_logo.png';
 import noccarc_logo from './sponsors/noccarc_logo.png';
 import ansys_logo from './sponsors/ansys_logo.png';
-import iitk_logo from './sponsors/iitk_logo.png';
+import ieee_logo from './sponsors/ieee_logo.png';
+import aws_logo from './sponsors/aws_logo.png';
+import nvidia_logo from './sponsors/nvidia_logo.png';
+import dji_logo from './sponsors/dji_logo.png';
+import hyundai_logo from './sponsors/hyundai_logo.png';
 
 export {
   // Hero
@@ -110,9 +118,12 @@ export {
   // typescript,
 
   // Projects
-  leaderboard,
-  math,
-
+  phasr,
+  dexter1,
+  excavator,
+  dexter2,
+  birac_wheelchair,
+  
   // Learning
   decision,
   hardware,
@@ -127,7 +138,12 @@ export {
   // microverse,
 
   // Sponsors
+  iitk_logo,
   noccarc_logo,
   ansys_logo,
-  iitk_logo
+  ieee_logo,
+  aws_logo,
+  nvidia_logo,
+  dji_logo,
+  hyundai_logo
 }
