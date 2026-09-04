@@ -34,7 +34,7 @@ const CustomButton2 = () => {
       onMouseOut={handleHoverOut}
       onClick={() =>
         window.open(
-          'https://drive.google.com/drive/folders/1wKYcLUhiKL1kB_m4zy3FWhC1z892Ky0p?usp=sharing',
+          'https://drive.google.com/drive/folders/1PJzaDFzJmwwmaCXtmdlDpKaNBspfiGU3',
           '_blank'
         )
       }

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { services } from '../constants';
 import { styles } from '../styles';
-import { Particles } from '../components/Particles';
+import { Particles } from './Particles';
 import { fadeIn, textVariant } from '../utils/motion';
 import Navbar1 from './Navbar1';
 
@@ -13,12 +13,12 @@ const ServiceCard = ({ index, title, icon, expandedCard, setExpandedCard }) => {
   return (
     <motion.div
       variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
-      className="xs:w-[250px] w-full card-gradient p-[1px] rounded-[20px] shadow-card cursor-pointer 
-      transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 hover:brightness-110"
+      className={`xs:w-[250px] w-full card-gradient p-[1px] rounded-[20px] shadow-card cursor-pointer 
+        transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 hover:brightness-110`}
       onClick={() => setExpandedCard(isExpanded ? null : index)}
       style={{
-        flex: '0 0 auto',
-        alignSelf: 'flex-start',
+        flex: '0 0 auto', // prevents flex from stretching all cards
+        alignSelf: 'flex-start', // keeps cards aligned at top
       }}
     >
       <motion.div
@@ -38,7 +38,7 @@ const ServiceCard = ({ index, title, icon, expandedCard, setExpandedCard }) => {
             className="mt-4 text-center text-silver text-sm"
           >
             This is extra information about <b>{title}</b>.  
-            Replace this with your own detailed research content.
+            Replace this with your own detailed content, images, or links.
           </motion.p>
         )}
       </motion.div>
@@ -46,7 +46,7 @@ const ServiceCard = ({ index, title, icon, expandedCard, setExpandedCard }) => {
   );
 };
 
-const Research = () => {
+const Learning = () => {
   const [expandedCard, setExpandedCard] = useState(null);
 
   useEffect(() => {
@@ -62,37 +62,12 @@ const Research = () => {
 
       <div id="projects" style={{ position: 'relative', width: '80vw', marginTop: '5vh' }}>
         <motion.div variants={textVariant()} className={`${styles.textCenter} flex-col`}>
-          <h2 className={`${styles.sectionHeadTextLight}`}>Research</h2>
+          <h2 className={`${styles.sectionHeadTextLight}`}>Learning</h2>
           <motion.p
             variants={fadeIn('', '', 0.1, 1)}
             className={`sm:text-[18px] text-[16px] text-taupe tracking-wider font-poppins ml-2 ${styles.textCenter}`}
           >
-            The team was founded under Prof. Laxmidhar Behera, currently the director of IIT Mandi, in 2018. 
-            We continue to work with faculty, our current advisor being Prof. Indranil Saha. Since our inception, 
-            we have grown in number and ability, undertaking various projects, participating in competitions, and demonstrating 
-            our research. To get to know the amazing people involved, 
-            <a
-              href="https://www.dropbox.com/scl/fi/165w2ovsfg4wlif3zone6/Brochure.pdf?rlkey=wjhej532ayequjvny56ggnpjt&dl=0"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                fontWeight: 'bold',
-                color: '#6194fb',
-                textDecoration: 'none',
-                transition: 'color 0.3s, transform 0.3s',
-                display: 'inline-block'
-              }}
-              onMouseOver={(e) => {
-                e.target.style.color = 'white';
-                e.target.style.transform = 'scale(1.1)';
-              }}
-              onMouseOut={(e) => {
-                e.target.style.color = '#6194fb';
-                e.target.style.transform = 'scale(1)';
-              }}
-            >
-               click here.
-            </a>
+            The team was founded under Prof. Laxmidhar Behera, currently the director of IIT Mandi...
           </motion.p>
         </motion.div>
 
@@ -112,4 +87,4 @@ const Research = () => {
   );
 };
 
-export default SectionWrapper(Research, 'research');
+export default SectionWrapper(Learning, 'learning');

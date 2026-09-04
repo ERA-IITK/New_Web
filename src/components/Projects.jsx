@@ -143,7 +143,7 @@ const Projects = () => {
     <div style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1000 }}>
       <Navbar1 />
     </div>
-    <div id='projects' style={{position: 'fixed' ,width: '80vw', marginLeft: '-40vw' ,marginTop: '-40vh' }}>
+    <div id='projects' style={{width: '100%',marginTop: '-15vh'}}>
         <motion.div variants={textVariant()} className={`${styles.textCenter} flex-col`} >
           {/* <p className={`${styles.sectionSubText}`}>Accomplishments</p> */}
           <h2 className={`${styles.sectionHeadTextLight}`}>Projects</h2>

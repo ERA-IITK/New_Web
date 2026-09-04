@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "proxy": "https://script.google.com/macros/s/AKfycbw78xJ_5UvrQiJb_ZNm6ayIDYuz3lHSVbIfnAo_rN0FL9PzKaDl5JzHfsAXSlsJadmr/exec",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -19,6 +20,7 @@
     "@react-three/fiber": "^8.13.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.1.0",
+    "cors-anywhere": "^0.4.4",
     "framer-motion": "^10.12.5",
     "maath": "^0.5.3",
     "react": "^18.2.0",
